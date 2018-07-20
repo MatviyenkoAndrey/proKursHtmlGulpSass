@@ -1,0 +1,307 @@
+*::-webkit-input-placeholder 
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder 
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder 
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder 
+	color: #666
+	opacity: 1
+
+
+body input:focus:required:invalid
+body textarea:focus:required:invalid 
+	border: 3px solid red
+
+body input:required:valid
+body textarea:required:valid 
+	border: 3px solid green
+
+$roboto: 'Roboto', sans-serif;
+$red: #9b1818;
+$green: #67bc5c;
+$color_line: #cea380;
+
+body
+	font-family: $roboto
+	line-height: 1.6
+
+header
+	background-image: url("../img/f1.jpg")
+	min-height: 640px
+	background-position: top center
+	background-repeat: no-repeat
+	background-size: cover
+	.top_header
+		padding-top: 30px
+	.logo
+		display: inline-block
+		a
+			font-weight: 700
+			color: #fff
+			font-size: 40px
+			&:hover
+				text-decoration: none 
+.phone
+	float: right
+	color: #fff
+	font-size: 16px
+	text-align: right
+.phone .wrapper .tab 
+	text-transform: uppercase
+	cursor: pointer
+
+
+.phone .wrapper .active
+	text-decoration: underline
+
+.phone .tab_item 
+	display: none
+	font-weight: 700
+	font-size: 35px
+	
+	
+
+.phone .tab_item:first-child
+	display: block
+
+
+
+.prokurs_tab .wrapper .tab 
+	text-transform: uppercase
+	cursor: pointer
+	background-color: rgba(#fff, .25)
+	color: #fff
+	font-weight: 700
+	padding: 22px 16px
+	display: block
+	float: left
+.prokurs_tab .wrapper .tabs:after
+	content: ""
+	clear: both
+	display: block
+
+.prokurs_tab .wrapper .active
+	color: #000
+	background-color: rgba(#fff, .6)
+
+.prokurs_tab .tab_item 
+	display: none
+	
+	// margin-top: 19px
+	padding: 20px 30px 80px 65px
+	
+.prokurs_tab .tab_content
+	position: relative
+	height: 255px 
+	background-color: rgba(#fff, .6)
+	ul
+		list-style: none
+		li	
+			color: #000
+			font-size: 18px
+			font-weight: 700
+			padding: 5px 0 5px 40px
+			text-transform: uppercase
+
+.prokurs_tab .tab_item:first-child
+	display: block
+.header_content
+	padding-top: 50px
+	h1
+		font-size: 37px
+		font-weight: 300
+		max-width: 753px
+		color: #fff
+		padding-bottom: 30px
+		span
+			font-size: 61px
+%btn
+	font-weight: 700
+	color: #fff
+	font-size: 16px
+	text-transform: uppercase
+	padding: 13px 34px
+	border-radius: 3px
+	text-decoration: none
+.btn_red
+	position: absolute
+	bottom: 20px
+	right: 25px
+	a
+		background-color: $red
+		@extend %btn
+%fa
+	top: 8px
+	position: absolute
+	font-size: 22px
+	color: #706a67
+
+.awesome_img
+	font: normal normal normal 14px/1 FontAwesome
+	ul
+		padding-left: 0
+	li
+		position: relative
+		
+	li:nth-child(1):before
+		content: "\f19d"
+		left: 6px
+		@extend %fa
+		
+	li:nth-child(2):before
+		content: "\f0c9"
+		left: 6px
+		@extend %fa
+	li:nth-child(3):before
+		content: "\f0ac"
+		left: 6px
+		@extend %fa
+.info
+	padding: 49px 0 39px
+	background: #c6d8ee
+	background: -moz-linear-gradient(top,  #c6d8ee 1%, #e8eff7 100%) 
+	background: -webkit-linear-gradient(top,  #c6d8ee 1%,#e8eff7 100%) 
+	background: linear-gradient(to bottom,  #c6d8ee 1%,#e8eff7 100%) 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c6d8ee', endColorstr='#e8eff7',GradientType=0 )
+.form
+	background-color: #FFF
+	padding: 45px 0
+	.text
+		text-align: center
+		font-size: 50px
+		font-weight: 300
+		color: #003469
+	.col-md-10
+		.text_1
+			color: $red
+			font-weight: 700
+			font-size: 30px
+		.text_2
+			font-size: 16px
+			color: #333
+			padding-top: 10px
+aside
+	border: 5px solid $green
+	padding: 0 25px
+	.text_form
+		text-align: center
+		font-weight: 700
+		font-size: 22px
+		padding: 25px 0
+		text-transform: uppercase
+		color: #444
+	label
+		color: #666
+		font-size: 14px
+		display: block
+	input
+		width: 100%
+		border: 3px solid $green
+		outline: none
+	.btn_green
+		@extend %btn
+		background-color: $green
+		margin-top: 35px
+		margin-bottom: 45px
+.reviews
+	background-image: url("../img/f2.jpg")
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: top center
+	min-height: 641px
+	text-align: center
+	padding: 60px 0
+	color: #fff
+	.reviews_head
+		font-size: 50px
+		font-weight: 300
+		padding-bottom: 60px
+	#owl-example
+		position: relative
+		.owl-next
+			background-image: url("../img/right.png")
+			width: 37px
+			height: 140px
+			position: absolute
+			top: 50%
+			right: 0
+		.owl-prev
+			background-image: url("../img/left.png")
+			width: 37px
+			height: 140px
+			position: absolute
+			top: 50%
+			left: 0
+	.rev_name
+		font-size: 22px
+		font-style: italic
+		padding-top: 20px
+	.line
+		margin: 20px auto
+		width: 80px
+		height: 1px
+		background-color: $color_line
+	.rev_text
+		font-size: 15px
+		max-width: 740px
+		margin: 0 auto
+.flag
+	background-image: url("../img/flag.jpg")
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: top center
+	min-height: 235px
+	padding: 37px 0 30px
+	text-align: center
+	.text
+		text-transform: uppercase
+		font-size: 26px
+		color: #fff
+		background-color: rgba(#fff,.13)
+		padding: 10px 25px
+		margin-bottom: 27px
+	.btn_white
+		a
+			background-color: #fff
+			@extend %btn
+			color: #000
+.map
+	padding: 48px 0 28px
+	.col-md-5
+		font-size: 50px
+		text-align: right
+	.col-md-7
+		padding-top: 14px
+		.btn_map
+			display: inline-block
+			border: 5px solid $red
+			.map_item
+				cursor: pointer
+				text-decoration: none
+				font-size: 16px
+				font-weight: 700
+				text-transform: uppercase
+				padding: 16px 50px
+				color: $red
+				display: inline-block
+				&.active
+					color: #fff
+					background-color: $red
+		.tab_item
+			font-size: 18px
+			color: #333
+			padding-top: 16px
+			display: none
+		.tab_item:first-child
+			display: block
+	.full_maps .maps
+		display: none
+	.full_maps .maps:first-child
+		display: block
